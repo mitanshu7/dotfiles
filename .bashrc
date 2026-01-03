@@ -19,9 +19,25 @@ alias pd="protonvpn disconnect"
 alias ze="zed . && exit"
 
 # Make authenticated request using HTTPie
-# Function evaluates at runtime and 
-# then expands the additional arguments 
+# Function evaluates at runtime and
+# then expands the additional arguments
 ha() {
   http -A bearer -a "$ACCESS_TOKEN" "$@"
 }
 
+
+## Git related
+alias gs="git status"
+alias gl="git log"
+alias gd="git diff"
+
+alias ga="git add"
+alias gal="git add ."
+alias gc="git commit -m"
+
+alias gpl="git pull"
+alias gph="git push"
+
+alias gct="git checkout"
+alias gctb="git checkout -b"
+alias gsh="git stash"
