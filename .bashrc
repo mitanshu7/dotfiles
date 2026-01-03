@@ -1,9 +1,27 @@
-# Alias to connect proton vpn
+# Aliases
+
+## OS related
+
+### Update Ubuntu apps
+alias uup="sudo apt update && sudo apt upgrade --yes"
+
+### Update Fedora apps
+alias fup="sudo dnf update --refresh --assumeyes"
+
+# Connect proton vpn
 # Default is to connect to the fastest country
 alias pc="protonvpn connect"
 
-# Alias to disconnect proton vpn
+# Disconnect proton vpn
 alias pd="protonvpn disconnect"
 
-# Alias to open Zed editor in the current shell and exit
+# Open Zed editor in the current shell and exit
 alias ze="zed . && exit"
+
+# Make authenticated request using HTTPie
+# Function evaluates at runtime and 
+# then expands the additional arguments 
+ha() {
+  http -A bearer -a "$ACCESS_TOKEN" "$@"
+}
+
