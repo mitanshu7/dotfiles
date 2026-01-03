@@ -41,3 +41,7 @@ alias gph="git push"
 alias gct="git checkout"
 alias gctb="git checkout -b"
 alias gsh="git stash"
+
+# Python related
+alias serve="python3 -m http.server --directory ."
+alias vnv="source .venv/bin/activate"
