@@ -33,7 +33,7 @@ alias gd="git diff"
 
 alias ga="git add"
 alias gal="git add ."
-alias gc="git commit -m"
+alias gc="git commit --message"
 
 alias gpl="git pull"
 alias gph="git push"
